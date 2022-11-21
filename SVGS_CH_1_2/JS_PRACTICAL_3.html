@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL 3</title>
+
+</head>
+
+<body>
+    <h1 align='center' style="color: purple;">ARRAY FUNCATIONALITY</h1>
+    <script>
+        let fruits = ["Mango", "Apple", "Orange", "Pear"];
+        for (i = 0; i < fruits.length; i++) {
+            document.write(fruits[i] + "<br>")
+        }
+
+      /*  fruits.push("Bananna");
+        //document.write("<br>"+fruits);
+        for (f of fruits) {
+            document.write("<br>" + f + " ")
+        }
+
+        fruits.pop();
+        for (f of fruits) {
+            document.write("<br><br>" + f + " ")
+        }
+
+        fruits.shift();
+
+        for (f of fruits) {
+            document.write("<br> " + "<br>" + f + " ")
+        }
+
+        fruits.reverse();
+        for (f of fruits) {
+            document.write("<br><br>" + f + " ")
+        }*/
+
+        document.write("<h2 align = 'center'>" + "Concatinating arrays"+"</h2>");
+        
+        let cars = ["BMW", "Mercedese", "Lamborgini", "Bugati"];
+        for(i = 0; i<cars.length; i++)
+        {
+            document.write(cars[i]+"<br>");
+        }
+
+        let combo = fruits.concat(cars);
+        for(i = 0; i<combo.length; i++)
+        {
+            document.write(combo[i]+"<br>");
+        }
+
+        let number = [5,10,100,150,56];
+        number.sort();
+        for(i= 0; i<number.length; i++)
+        {
+          document.write("<br>"+number[i]+ " ")
+        }
+        document.write("     <br>")
+        number.sort(function(a,b){return a - b});
+        for(i= 0; i<number.length; i++)
+        {
+          document.write("<br>"+number[i]+ " ")
+        }
+    </script>
+
+</body>
+
+</html>

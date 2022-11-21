@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Hidden</title>
+</head>
+<body>
+    <form>
+
+        First name : <input type="text" name="" id="fname"><br><br>
+        Last name  : <input type="text" name="" id="lname"><br><br>
+        email      : <input type="hidden" id="email"><br><br>
+        <input type="button" value="Submit" onclick="addmail()"><br><br>
+
+        <script>
+            function addmail()
+            {
+                var fname = document.getElementById("fname");                    
+                var lname = document.getElementById("lname");     
+                var email = document.getElementById("email");  
+
+                email.value=fname.value+lname.value+"@xyx.com";
+                email.type="text"
+            }
+        </script>
+
+    </form>
+</body>
+</html>

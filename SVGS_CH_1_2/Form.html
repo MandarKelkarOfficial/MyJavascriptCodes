@@ -1,0 +1,54 @@
+﻿<html>
+
+<head>
+  <title> JS PROGRAM </title>
+</head>
+
+<body>
+  <h2 align=center style=color:purple>CREATE A PLAYER </h2>
+
+  <form method="POST" action="/person_info">
+    <p>Player Name :<input type="text" name="name"> </p>
+    <p>Password : <input type="password" name="password" </p><br>
+
+
+      <input type="radio" name="gender" value="male" checked>Male<br>
+      <input type="radio" name="gender" value="female">Female<br>
+      <input type="radio" name="gender" value="other">Other
+
+    <p>Jersy Number : <input type="number" name="num" min="1" max="99"></p>
+    <p>Jersy Color : <input type="color" name="jerseycolor"></p>
+    <p>Birthday : <input type="date" name="bday"></p>
+
+    <p>Position :</p>
+    <div><select name="Position">
+        <option value="sf">Small Forward</option>
+        <option value="pf">Power Forward</option>
+        <option value="pg">Point Gurd</option>
+        <option value="sg">Shooting Gurd</option>
+        <option value="c">Center</option>
+      </select></div>
+
+    <p>Borough</p>
+    <div><input list="borough">
+      <datalist id="borough">
+        <option value="Manhattan">
+        <option value="Brooklyn">
+        <option value="Queens">
+        <option value="Staten island">
+        <option value="Bronix">
+      </datalist>
+    </div>
+
+    <p>Biography</p>
+    <textarea name="message" rows="10" cols="30"></textarea><br><br>
+
+    <input type="submit" id="submit"/>
+    <input type="reset"> 
+    <a href="Form_HW.html"><input type="button" value="ReLogin"></a>
+
+    </form>
+
+</body>
+
+</html>

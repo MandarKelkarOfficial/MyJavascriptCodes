@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <form action="/personalinfo" method="post">
+        <h2 align=center style=color:purple>LOGIN FORM </h2>
+        <p align="center">&Star;username : <input type="text" id='un' /> </p>
+        <p align="center">&Star;Password : <input type="password" id='ps' /> </p>
+        <p align="center"><a href="Form.html"> <input type="button" value="submit" id="sb"/> </a>
+            <input type="reset">
+        </p>
+        <p align="center"><a href="ForgPass.html"><i style="color: red;">Forget password </i></a></p>
+
+        <script>
+
+            const username_1 = "Login@gmail.com";    // Username
+            const password_1 = "Login@123";          // Password
+            var inputp = document.getElementById('un');
+            inputp.addEventListener('input', event => {
+                if (inputp.value === '') {
+                    inputp.style.backgroundColor = 'lime';
+                }
+                else {
+                    inputp.style.backgroundColor = 'aqua';
+                }
+            });
+            var input = document.getElementById('ps');
+            input.addEventListener('input', event => {
+                if (input.value === '') {
+                    input.style.backgroundColor = 'lime';
+                }
+                else {
+                    input.style.backgroundColor = 'aqua';
+                }
+            });
+
+        </script>
+    </form>
+</body>
+
+</html>

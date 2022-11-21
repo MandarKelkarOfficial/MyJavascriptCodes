@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function clickMe() {
+            var w = window.open("", "myWindow", "width = 200 , height = 400");
+            w.document.write("<body>")
+            w.document.write("<h1 style = 'color:red';>Hey its me </h1>")
+            w.document.write("<button onclick='window.close()'>Click me</button>");
+            w.document.write("</body>")
+
+        }
+    </script>
+    <button onclick="clickMe()">click me</button>
+</body>
+
+</html>

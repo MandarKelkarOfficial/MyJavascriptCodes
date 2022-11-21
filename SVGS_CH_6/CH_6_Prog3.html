@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POP UP MENU</title>
+
+    <style>
+        .dropbtn {
+            position: absolute;
+            background-color: chartreuse;
+            color: red;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border: 1px solid red;
+            transition: 0.3s ease-in-out;
+            
+        }
+
+        .dropbtn:hover {
+            background-color: aqua;
+            color: coral;
+            border: 1px solid crimson;
+        }
+
+        .dropdown {
+            position: relative;
+            
+            display: inline-block;
+        
+        }
+
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            top: 80px;
+            background-color: aquamarine;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .dropdown-content a{
+            color: blueviolet;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            
+            color: purple;
+            background-color: blanchedalmond;
+
+        }
+
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="dropbtn" onclick="myFun()">CLICK ME</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#home">HOME</a>
+        <a href="#abt">ABOUT</a>
+        <a href="#cnt">CONTENT</a>
+    </div>
+
+    <script>
+
+        function myFun()
+        {
+            document.getElementById("myDropdown").classList.toggle("show");
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <script>
+        var newWindow;
+        function openWindow()
+        {
+            newWindow = window.open("","myWindow", "width = 200, height = 200, left = 700, top = 350");
+            newWindow.document.write("<p> Its my new window<p>");
+           // newWindow.document.write(<button onclick="closeWindow()"> Close new window  </button>);     
+        }
+        function closeWindow()
+        {
+        
+            window.close();
+        }
+    </script>
+    <button onclick="openWindow()"> Open new window</button><br><br><br><br><br>
+    <button onclick="closeWindow()"> Close new window  </button>
+</body>
+</html>

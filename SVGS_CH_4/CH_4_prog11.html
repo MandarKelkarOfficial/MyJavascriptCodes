@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History </title>
+</head>
+<body>
+    <style>
+        #btn1{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 300px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+        #btn2{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 50px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+        #btn3{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 550px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+    </style>
+    <button id="btn1" onclick="history.back()">Go back</button>
+    <button id="btn2" onclick="history.forward()">Go Forward</button>
+    <button id="btn3" onclick="history.go(-2)">Go 2 pages back</button>
+    <p id="demo"> </p>
+    <a href="CH_4_prog10.html">yo</a>
+
+    <script>
+        let length = window.history.length;
+        document.getElementById("demo").innerHTML= length;
+    </script>
+</body>
+</html>

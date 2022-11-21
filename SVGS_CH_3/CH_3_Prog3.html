@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating Checkbox selection</title>
+</head>
+<body style="background-color:aqua ;">
+    <h3 align = "center" style="color:purple ;">Are you a web developer ?</h3>
+   <h4 align = "center"> Yes 👍: <input type="checkbox"  id="myCheck1" value="Yes, I am a web developer">   </h4>
+   <h4 align = "center"> No  🙅‍♂️: <input type="checkbox"  id="myCheck2" value="No, I am not a web developer"></h4>
+   <br><br>
+
+  <h2 align = "center"> <button onclick="checkCheckbox()" >Submit</button></h2><br>
+   <h3 style="color: rgb(119, 128, 0);" align = "center" id="result"></h3>
+
+   <script>
+
+    function checkCheckbox()
+    {
+        {
+            var yes = document.getElementById("myCheck1");
+            var no = document.getElementById("myCheck2");
+
+            if(yes.checked == true)
+            {
+                var y = document.getElementById("myCheck1").value;
+                return document.getElementById("result").innerHTML=y;
+            }
+            else if(no.checked == true)
+            {
+                var n = document.getElementById("myCheck2").value;
+                return document.getElementById("result").innerHTML=n;
+            }
+            
+           else
+            {
+                var y = document.getElementById("myCheck1").value;
+                return document.getElementById("result").innerHTML=y;
+            }
+
+        }
+    }
+   </script>
+</body>
+</html>

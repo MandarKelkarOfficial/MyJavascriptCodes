@@ -1,0 +1,40 @@
+<html>
+ <title> OUESTION ONE </title>
+<head>
+</head>
+   <body>
+    <p id = "demo"></p>
+      <script>
+       
+        /*--Write Java script to create person object with properties firstname,
+        lastname, age, eyecolor, delete eyecolor property and display remaining
+        properties of person object..*/
+        
+        document.write("<h1 align = center style = color:red>"+ "BEFORE DELETING EYE-COLOUR"+"</h1>")
+        let text = '';
+        let person = { firstName:"Mandar",   lastName:"Kelkar",   age:19,   eyeColor:"brown"};
+        let x = 0;
+        for(x in person)
+        {
+            text += person[x] + "  <br>";
+        }
+        
+        document.write("<h2 style = color:blue>"+text+"</h2>");
+
+        document.write("<h1 align = center style = color:red>"+ "AFTER DELETING EYE-COLOUR"+"</h1>")
+        let text1 = '';
+        let person1 = { firstName:"Mandar",   lastName:"Kelkar",   age:19,   eyeColor:"brown"};
+        delete person.eyeColor;
+        let x1 = 0;
+        for(x1 in person)
+        {
+            text1 += person1[x1] + "  <br>";
+        }
+        
+        document.write("<h2 style = color:blue>"+text1+"</h2>");
+        
+        
+        
+      </script>
+    </body>
+ </html>

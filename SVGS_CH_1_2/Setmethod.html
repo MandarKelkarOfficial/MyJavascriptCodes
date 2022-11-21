@@ -1,0 +1,27 @@
+<html>
+ <title> SETMETHOD PROGRAM </title>
+<head>
+</head>
+   <body>
+    <p id = "demo"></p>
+      <script>
+    
+   const person = {
+
+    firstName : "John",
+    language : "NO",
+    set lang(value){
+       this.language = value;
+                   }
+   };
+   person.lang = "EN"
+   
+   /*let n = "SVGS";
+   person.lang(n)*/
+   document.write(person.language)
+  // document.getElementById(person.lang);
+
+
+      </script>
+    </body>
+ </html>

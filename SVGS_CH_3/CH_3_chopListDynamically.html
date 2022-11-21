@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Element list Dynamically</title>
+
+</head>
+<body>
+     <input type="text"  id="food">
+     <button id="btn">Click</button>
+     <select id="pickone"></select>
+         <h3 align="center"> 👍Array names😊 </h3>
+         <ol>
+            <li>fruits 🍉</li>
+            <li>flowers 💐</li>
+            <li>drinks 🍷</li>
+         </ol>
+    
+       <script>
+
+        function getType()
+        {
+            var x = document.getElementById("food").value;
+            var items;
+
+            if(x === "fruits")
+            {
+                items=["Apple", "Orange", "Bananna"];
+            }
+            else if(x === "drinks")
+            {
+                items=["Thums Up", "Deo", "Cola"];
+            }
+            else if(x === "flowers")
+            {
+                items=["Lilly ", "Lotus", "ROSE", "Sunflower"];
+            }
+            else
+            {
+                items=["Eggtree", "Olive"];
+            }
+            var str = "";
+            for(var item of items)
+            {
+                str +="<option>"+ item +"</option>";
+            }
+            document.getElementById("pickone").innerHTML=str;
+        }
+
+        document.getElementById("btn").addEventListener("click", getType);
+       </script>
+</body>
+</html>

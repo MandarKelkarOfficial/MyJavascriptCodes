@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location option</title>
+</head>
+<body>
+    <style>
+        #but1{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 300px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+        #but2{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 50px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+    </style>
+    <button onclick="Myfunction1()" id="but1">Load</button><br><br>
+    <button onclick="Myfunction2()" id="but2">Replace</button>
+    <p id="demo"></p>
+    <script>
+      function Myfunction1()
+      {
+        location.assign("https://www.google.com");
+      }
+      function Myfunction2()
+      {
+        location.replace("https://www.youtube.com");
+      }
+      let host = location.host;
+      document.getElementById("demo").innerHTML=host;
+      
+    </script>
+</body>
+</html>

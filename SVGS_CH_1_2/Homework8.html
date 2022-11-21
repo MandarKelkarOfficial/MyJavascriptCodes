@@ -1,0 +1,26 @@
+<html>
+ <title> HOMEWORK 8 </title>
+<head>
+</head>
+   <body>
+    <p id = "demo"></p>
+      <script>
+
+           /* Write a Java script program to display all prime numbers between 1 to 50.*/
+           confirm("The following program shoes all the \nprime numbers between 1 to 50 ");
+           for (i = 0; i <= 50; i++) {
+
+            var notPrime = false;
+            for ( j = 2; j <= i; j++) {
+                if (i%j===0 && j!==i) {
+                    notPrime = true;
+                }
+            }
+            if (notPrime === false) {
+                        document.write("<h3 align = center style= color:blue>"+i+"<br>");
+            }
+        }
+
+      </script>
+    </body>
+ </html>

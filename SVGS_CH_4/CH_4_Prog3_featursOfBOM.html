@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features of BOM</title>
+</head>
+<body>
+    <button onclick="funFocus()">Focus</button>
+    <button onclick="funBlur()">Blur</button>
+
+    <script>
+        function funFocus()
+        {
+            const myWindow = window.open("","","width = 200, height = 100");
+            myWindow.focus();
+        }
+        function funBlur()
+        {
+            const myWindow = window.open("","","width = 200, height = 200");
+            myWindow.blur();
+        }
+    </script>
+</body>
+</html>

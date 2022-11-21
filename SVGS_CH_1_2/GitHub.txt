@@ -1,0 +1,17 @@
+Git hub links
+
+https://github.com/Mandar-Kelkar/Simple_-HTML-CSS_Program_for_GlowingButton.git
+
+
+echo "# Simple_-HTML-CSS_Program_for_GlowingButton" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Mandar-Kelkar/Simple_-HTML-CSS_Program_for_GlowingButton.git
+git push -u origin main
+
+
+git remote add origin https://github.com/Mandar-Kelkar/Simple_-HTML-CSS_Program_for_GlowingButton.git
+git branch -M main
+git push -u origin main

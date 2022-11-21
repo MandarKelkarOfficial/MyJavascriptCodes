@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TImeInterval</title>
+</head>
+<body>
+    <style>
+        #clock{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 300px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+    </style>
+    <script>
+
+        function waitAndShoe(){
+        var systemdate = new Date();
+        document.getElementById("clock").innerHTML=systemdate.toLocaleTimeString();
+        }
+
+        setInterval(waitAndShoe, 4000);
+    </script>
+    <h3>Updated time will be shown in every 4 sec</h3>
+    <h3>The current time on your pc is : <br>
+    <span id="clock"></span></h3>
+</body>
+</html>

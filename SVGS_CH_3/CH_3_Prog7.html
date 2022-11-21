@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disebling a form</title>
+</head>
+<body>
+    <form name="myform">
+        Username : <input type="text" name="name" /><br><br>
+        <input type="button" value="Disible name field" onclick="DisableFunction()">
+        <input type="button" value="Enable name field" onclick="EnableFunction()">  <br>
+        <script>
+            function EnableFunction()
+            {
+                document.forms.myform.name.disabled=false;
+            }
+            function DisableFunction()
+            {
+                document.forms.myform.name.readOnly=true;
+            }
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <title> SWITCH PROG BY MK. </title>
+    <head></head>
+    <body bgcolor="#7FFDA">
+        <script>
+            var b = prompt("How may times you want to test the program");
+            for(i = 0; i<b; i++)
+            {
+                var a = prompt("Enter which text colour you want \n1. RED\n2. Blue \n3. green");
+                switch(a)
+                {
+                    case '1':
+                      document.write("<h1 align=center style=color:red;>RED</h1>");
+                      break;
+                    case '2':
+                      document.write("<h1 align=center style=color:blue;>BLUE</h1>");
+                      break;
+                    case '3':
+                      document.write("<h1 align=center style=color:green;>GREEN</h1>");
+                      break;
+                    default :
+                       alert("You have entered wrong choice");
+                }
+
+            }
+        </script>
+    </body>
+     
+
+</html>

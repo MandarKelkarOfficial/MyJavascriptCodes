@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace uding regex</title>
+</head>
+<body>
+    <script>
+
+        function ck()
+        {
+            let re = /-/g;
+            var str = "07-10-2022";
+            var result = str.replace(re,":");
+            document.write(result);
+        }
+    </script>
+    <style>
+        #btn{
+            position: absolute;
+            width: 200px;
+            height: 34px;
+            left: 300px;
+            top: 50px;
+
+            background: #B57BFF;
+            border-radius: 34px;
+        }
+    </style>
+    <button onclick="setTimeout(ck(), 4000)" id="btn">Change</button>
+</body>
+</html>

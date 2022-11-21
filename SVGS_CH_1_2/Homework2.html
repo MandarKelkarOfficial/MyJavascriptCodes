@@ -1,0 +1,36 @@
+<html>
+ <title>HOMEWORK 2 </title>
+<head>
+</head>
+   <body>
+    <p id = "demo"></p>
+      <script>
+
+     /*Implement getter and setter properties in Java script */
+
+
+        let name = {
+            firstName: 'Mandar',
+            get getName() {
+                return this.firstName;
+            }
+        };
+        document.write("<h1 align = center style = color:purple>"+name.getName);
+
+            let secondname = {
+                sname: 'Mandar',
+                set second_name(s_name) {
+                    this.sname = s_name;
+                }
+            };
+
+            document.write("<h1 align = center style = color:maroon>"+secondname.sname)// before changing
+            //Setting new name 
+            secondname.second_name = "Ashwin"; // new name
+            document.write("<h1 align = center style = color:maroon>"+secondname.sname)// after changing
+        
+
+
+      </script>
+    </body>
+ </html>
